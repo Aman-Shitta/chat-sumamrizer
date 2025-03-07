@@ -1,0 +1,16 @@
+{{ define "header" }}
+    <header>
+        {{ if .Title }}
+            <h1>{{ .Title }}</h1>
+        {{ else }}
+            <h1>Title not added</h1>
+        {{ end }}
+
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="/about">About</a> | 
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <hr>
+{{ end }}

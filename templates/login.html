@@ -1,0 +1,17 @@
+{{ define "body" }}
+
+    <form action="/login" method="post">
+        <div class="mb-3">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="form-control" placeholder="Enter User..." aria-describedby="helpId">
+        </div>
+        <div class="mb-3">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-describedby="helpId">
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+{{ end }}
+
